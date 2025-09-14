@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3: CSS + JavaScript Animations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎨🎬 CSS + JavaScript Animation Demo</h1>
+
+  <!-- Animate Box -->
+  <button onclick="animateBox()">Bounce Box</button>
+  <div class="box" id="myBox"></div>
+
+  <!-- Card Flip -->
+  <div class="card-container">
+    <div class="card" id="myCard">
+      <div class="card-face card-front">Front</div>
+      <div class="card-face card-back">Back</div>
+    </div>
+  </div>
+  <button onclick="flipCard()">Flip Card</button>
+
+  <!-- Loader -->
+  <button onclick="toggleLoader()">Toggle Loader</button>
+  <div class="loader" id="loader"></div>
+
+  <!-- Modal -->
+  <button onclick="openModal()">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <p>This is a popup modal 🎉</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

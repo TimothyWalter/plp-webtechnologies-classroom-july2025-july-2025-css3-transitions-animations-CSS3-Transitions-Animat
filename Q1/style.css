@@ -1,0 +1,71 @@
+
+body {
+ font-family: Arial, sans-serif;
+ background: #f4f7fa;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ flex-direction: column;
+ gap: 2rem;
+}
+
+    /* Button with hover transition */
+.btn {
+ padding: 15px 30px;
+ font-size: 18px;
+ font-weight: bold;
+ border: none;
+ border-radius: 8px;
+ cursor: pointer;
+ background: #4a90e2;
+ color: white;
+ transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+ background: #357ABD;
+ transform: scale(1.1);
+}
+
+/* Fade-in box */
+.fade-box {
+ width: 150px;
+ height: 150px;
+ background: #ff7675;
+ opacity: 0;
+ animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+/* Sliding animation */
+.slide-box {
+ width: 150px;
+ height: 150px;
+ background: #55efc4;
+ animation: slideRight 2s ease-in-out infinite alternate;
+}
+
+@keyframes slideRight {
+from { transform: translateX(0); }
+to { transform: translateX(200px); }
+}
+
+/* Spinning loader */
+.spinner {
+ width: 60px;
+ height: 60px;
+ border: 6px solid #ddd;
+ border-top: 6px solid #0984e3;
+ border-radius: 50%;
+ animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
